@@ -4,6 +4,12 @@ $manrope: "Manrope", sans-serif;
 $poppins: "Poppins", sans-serif;
 $home-bg: #1c1e53;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -87,10 +93,12 @@ p {
     flex: 1;
     align-items: center;
     padding: 125px 0;
+
     &-button-container {
+      display: flex;
       a {
         border: 2px solid rgba(244, 246, 252, 0.2);
-        padding: 16px 32px;
+        padding: 16px 56px;
         border-radius: 41px;
         display: inline-block;
         margin-top: 48px;
@@ -100,6 +108,16 @@ p {
         background: #fcd980;
         border: 2px solid #fcd980;
         margin-right: 40px;
+      }
+      a:nth-child(2) {
+        align-items: center;
+        color: #ffffff;
+        border: none;
+        img {
+          margin-left: 10px;
+          margin-top: 2px;
+          display: inline-block;
+        }
       }
     }
     &-text {
@@ -117,7 +135,71 @@ p {
     &-illustration {
       flex: 0.5;
       img {
+        max-width: 500px;
         object-fit: cover;
+      }
+    }
+  }
+}
+
+.how-we-work {
+  width: 100%;
+  background: #f4f6fc;
+  &-container {
+    @include widthAndmargin();
+    display: flex;
+    flex: 1;
+    padding: 125px 0;
+    gap: 15%;
+    &-heading {
+      flex: 0.3;
+      h2 {
+        font-size: 48px;
+        color: #282938;
+      }
+      p {
+        font-size: 16px;
+        line-height: 28px;
+        color: #282938;
+        opacity: 0.7;
+        margin-top: 16px;
+      }
+      a {
+        font-size: 18px;
+        line-height: 32px;
+        color: #2405f2;
+        margin-top: 16px;
+        display: inline-block;
+        img {
+          margin-left: 10px;
+          margin-top: 2px;
+          display: inline-block;
+        }
+      }
+    }
+    &-cards {
+      flex: 0.7;
+      &-card-first,
+      &-card-second {
+        display: flex;
+        img {
+          display: inline-block;
+        }
+        h5 {
+          font-weight: 500;
+          font-size: 32px;
+          color: #282938;
+          margin-top: 20px;
+        }
+        p {
+          font-size: 16px;
+          color: #282938;
+          opacity: 0.7;
+          margin-top: 10px;
+        }
+      }
+      &-card-second {
+        margin-top: 50px;
       }
     }
   }
