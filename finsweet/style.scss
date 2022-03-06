@@ -8,3 +8,20 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+h1,
+h2,
+h3 {
+  font-family: $poppins;
+  font-weight: 600;
+}
+
+h5 {
+  font-family: $poppins;
+  font-weight: 500;
+}
+p,
+a {
+  font-family: $poppins;
+  font-size: 16px;
+}
