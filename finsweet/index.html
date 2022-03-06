@@ -8,11 +8,47 @@
   </head>
   <body>
     <div id="app">
-      <nav>
-        <div class="logo">
-          <img src="../finsweet/assests/navbar/logo.png" alt="">
+      <nav class="navigator" id="navigator">
+        <div class="navigator-container">
+          <div class="navigator-logo" id="navigator-logo">
+            <img src="assests/navbar/logo.png" alt="navigator-logo" />
+          </div>
+          <div class="navigator-links">
+            <ul class="navigator-links-ul">
+              <li><a href="#home" class="navigatorlink-active">Home</a></li>
+              <li><a href="#about-us">About us</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contactUs" class="contact-us">Contact us</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <section class="home" id="home">
+        <div class="home-hero" id="home-hero">
+          <div class="home-hero-text">
+            <h1>Building stellar websites for early startups</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <div class="home-hero-button-container">
+              <a href="" >View our work</a>
+              <a href=""
+                >View Pricing <img src="./assests/HomeHero/arrow.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="home-hero-illustration">
+            <img
+              src="./assests/HomeHero/Illustration.svg"
+              alt="home-hero-illustration"
+            />
+          </div>
+        </div>
+      </section>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

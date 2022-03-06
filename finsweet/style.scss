@@ -2,6 +2,7 @@
 
 $manrope: "Manrope", sans-serif;
 $poppins: "Poppins", sans-serif;
+$home-bg: #1c1e53;
 
 body {
   margin: 0;
@@ -20,8 +21,104 @@ h5 {
   font-family: $poppins;
   font-weight: 500;
 }
-p,
 a {
   font-family: $poppins;
   font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+p {
+  font-size: 16px;
+  font-family: $poppins;
+  font-weight: 500;
+}
+
+@mixin widthAndmargin() {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.app {
+  width: 100%;
+}
+
+.navigator {
+  background: $home-bg;
+  max-width: 100%;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 32px 0;
+  }
+}
+
+.navigator-links {
+  ul {
+    display: flex;
+  }
+  ul li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      line-height: 28px;
+      margin-right: 32px;
+      color: #bbbbcb;
+    }
+  }
+  &-active {
+    color: #ffffff;
+  }
+  .contact-us {
+    border: 2px solid rgba(244, 246, 252, 0.2);
+    padding: 16px 32px;
+    border-radius: 41px;
+  }
+}
+.home {
+  width: 100%;
+  background: $home-bg;
+  &-hero {
+    @include widthAndmargin();
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 125px 0;
+    &-button-container {
+      a {
+        border: 2px solid rgba(244, 246, 252, 0.2);
+        padding: 16px 32px;
+        border-radius: 41px;
+        display: inline-block;
+        margin-top: 48px;
+      }
+      a:nth-child(1) {
+        color: #1b1c2b;
+        background: #fcd980;
+        border: 2px solid #fcd980;
+        margin-right: 40px;
+      }
+    }
+    &-text {
+      flex: 0.5;
+      h1 {
+        font-size: 54px;
+        color: #fff;
+      }
+      p {
+        margin-top: 24px;
+        line-height: 28px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    &-illustration {
+      flex: 0.5;
+      img {
+        object-fit: cover;
+      }
+    }
+  }
 }
