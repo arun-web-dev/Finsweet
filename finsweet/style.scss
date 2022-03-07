@@ -73,6 +73,7 @@ p {
 .navigator-links {
   ul {
     display: flex;
+    align-items: center;
   }
   ul li {
     list-style: none;
@@ -81,6 +82,7 @@ p {
       line-height: 28px;
       margin-right: 32px;
       color: #bbbbcb;
+      display: inline-block;
     }
   }
   &-active {
@@ -899,5 +901,55 @@ p {
         }
       }
     }
+  }
+}
+
+/* BreakPoints */
+// 768px, 769px, 1024px, 1216px, and 1408
+
+@media screen and (max-width: 768px) {
+  .navigator-links ul {
+    display: none;
+  }
+
+  .home-hero {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .home-hero-button-container a {
+    padding: 8px 10px;
+  }
+  .how-we-work-container {
+    gap: 10%;
+    flex-direction: column;
+
+    &-cards {
+      margin-top: 15px;
+    }
+  }
+  .our-work-container-header h2 {
+    font-size: 26px;
+  }
+
+  .features-container-header-section h2 {
+    font-size: 18px;
+  }
+
+  .features-container-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .home-hero-button-container a {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  .home-hero-button-container a {
+    padding: 10px 15px;
+    font-size: 15px;
   }
 }
