@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Poppins:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Poppins:wght@300;400;500;600&display=swap");
 
 $manrope: "Manrope", sans-serif;
 $poppins: "Poppins", sans-serif;
@@ -18,11 +18,18 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-family: $poppins;
-  font-weight: 600;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
 h5 {
   font-family: $poppins;
   font-weight: 500;
@@ -54,6 +61,7 @@ p {
   max-width: 100%;
   &-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 80%;
     margin: 0 auto;
@@ -135,7 +143,7 @@ p {
     &-illustration {
       flex: 0.5;
       img {
-        max-width: 500px;
+        max-width: 100%;
         object-fit: cover;
       }
     }
@@ -223,7 +231,156 @@ p {
       a {
         font-size: 16px;
         color: #282938;
-        margin-right: 15px;
+        display: inline-block;
+        img {
+          margin-left: 10px;
+        }
+      }
+    }
+    &-cards {
+      margin-top: 64px;
+      display: flex;
+      flex: 1;
+      gap: 30px;
+      &-left {
+        display: flex;
+        flex: 0.6;
+        position: relative;
+        &-image {
+          flex: 1;
+          img {
+            max-width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        &-overlay {
+          position: absolute;
+          width: 50%;
+          height: 100%;
+          display: flex;
+          text-align: left;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding-left: 40px;
+          padding-right: 35px;
+          background: linear-gradient(
+            329.39deg,
+            #1c1e53 -10.96%,
+            rgba(28, 30, 83, 0.42) 103.96%
+          );
+          h4 {
+            font-weight: 600;
+            font-size: 24px;
+            color: #ffffff;
+          }
+          p {
+            font-family: $poppins;
+            font-size: 16px;
+            font-weight: 300;
+            color: #ffffff;
+            opacity: 0.8;
+            margin-top: 16px;
+          }
+          a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            display: inline-block;
+            align-items: center;
+            color: #fcd980;
+            margin-bottom: 75px;
+            margin-top: 40px;
+          }
+        }
+      }
+      &-right {
+        flex: 0.4;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        &-top {
+          position: relative;
+          &-image {
+            max-width: 350px;
+            object-fit: cover;
+
+            img {
+              object-fit: cover;
+              max-width: 100%;
+            }
+          }
+          &-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              329.39deg,
+              #1c1e53 -10.96%,
+              rgba(28, 30, 83, 0.42) 103.96%
+            );
+            padding: 110px 36px 0 50px;
+            h3 {
+              font-weight: 600;
+              font-size: 24px;
+              color: #ffffff;
+            }
+            a {
+              font-size: 16px;
+              display: inline-block;
+              color: #fcd980;
+              margin-top: 10px;
+              margin-bottom: 45px;
+              img {
+                display: inline-block;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+        &-bottom {
+          position: relative;
+          &-image {
+            max-width: 350px;
+            object-fit: cover;
+
+            img {
+              object-fit: cover;
+              max-width: 100%;
+            }
+          }
+          &-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              329.39deg,
+              #1c1e53 -10.96%,
+              rgba(28, 30, 83, 0.42) 103.96%
+            );
+            padding: 110px 36px 0 50px;
+            h3 {
+              font-weight: 600;
+              font-size: 24px;
+              color: #ffffff;
+            }
+            a {
+              font-size: 16px;
+              display: inline-block;
+              color: #fcd980;
+              margin-top: 10px;
+              margin-bottom: 45px;
+              img {
+                display: inline-block;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
       }
     }
   }
