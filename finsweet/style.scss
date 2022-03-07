@@ -527,3 +527,70 @@ p {
     }
   }
 }
+
+.faq {
+  width: 100%;
+  background: #e5e5e5;
+  &-container {
+    @include widthAndmargin();
+    padding: 128px 0;
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
+    flex: 1;
+    &-heading {
+      flex: 0.3;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-weight: 600;
+        font-size: 38px;
+        color: #282938;
+      }
+      a {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 18px;
+        color: #2405f2;
+        opacity: 0.87;
+        margin-top: 16px;
+      }
+    }
+    &-question {
+      flex: 0.7;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      &s {
+        display: flex;
+        flex-direction: column;
+        &-block {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h6:nth-child(1) {
+            font-weight: 500;
+            font-size: 24px;
+            color: #2405f2;
+          }
+          h6:nth-child(2) {
+            font-weight: 500;
+            font-size: 24px;
+            color: #282938;
+          }
+        }
+        &-answers-block {
+          display: flex;
+          margin-top: 16px;
+          p {
+            font-weight: 500;
+            font-size: 18px;
+            color: #282938;
+            opacity: 0.87;
+            padding: 0 10%;
+          }
+        }
+      }
+    }
+  }
+}
