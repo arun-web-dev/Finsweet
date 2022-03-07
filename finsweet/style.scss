@@ -594,3 +594,116 @@ p {
     }
   }
 }
+
+.contact-form {
+  width: 100%;
+  background: #e5e5e5;
+  &-container {
+    @include widthAndmargin();
+    background: url("./assests/ContactForm/Background.png") center center/cover
+        no-repeat,
+      url("./assests/ContactForm/contact-form-left-bg.jpg") center center/cover
+        no-repeat;
+    display: flex;
+    flex: 1;
+    height: 691px;
+    margin-bottom: 100px;
+
+    &-start-convert {
+      flex: 0.5;
+      padding: 96px;
+      h1 {
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 65px;
+        color: #ffffff;
+      }
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        margin-top: 24px;
+      }
+    }
+    &-form {
+      background: #1c1e53;
+      flex: 0.5;
+      padding: 90px 60px;
+      display: flex;
+      flex-direction: column;
+      h5 {
+        font-weight: 500;
+        font-size: 32px;
+        color: #ffffff;
+      }
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        color: #f4f6fc;
+        margin-top: 16px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        button {
+          font-family: $manrope;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 20px;
+          color: #1b1c2b;
+          text-align: center;
+          padding: 16px;
+          background: #fcd980;
+          border-radius: 41px;
+          margin-top: 39px;
+          &:focus,
+          &hover {
+            outline: none;
+            border: none;
+            cursor: pointer;
+          }
+        }
+
+        a {
+          display: inline-block;
+          text-align: center;
+          font-size: 18px;
+          line-height: 32px;
+          color: #ffffff;
+          margin-top: 28px;
+          img {
+            display: inline-block;
+            margin-right: 10px;
+          }
+        }
+
+        input {
+          background: transparent;
+          display: inline-block;
+          width: 100%;
+          padding: 18px 32px;
+          border: 1.5px solid rgba(255, 255, 255, 0.05);
+          margin-top: 16px;
+          border-radius: 8px;
+          color: #fff;
+          font-size: 16px;
+          font-family: $poppins;
+          font-weight: 400;
+          &:nth-child(1) {
+            margin-top: 40px;
+          }
+          &::placeholder {
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 16px;
+            color: #f4f6fc;
+            opacity: 0.5;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
