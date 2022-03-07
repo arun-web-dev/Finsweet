@@ -182,6 +182,7 @@ p {
       &-card-first,
       &-card-second {
         display: flex;
+        gap: 10%;
         img {
           display: inline-block;
         }
@@ -200,6 +201,29 @@ p {
       }
       &-card-second {
         margin-top: 50px;
+      }
+    }
+  }
+}
+
+.our-work {
+  width: 100%;
+  background-color: #e5e5e5;
+  &-container {
+    @include widthAndmargin();
+    padding: 125px 0;
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        font-size: 48px;
+        color: #282938;
+      }
+      a {
+        font-size: 16px;
+        color: #282938;
+        margin-right: 15px;
       }
     }
   }
