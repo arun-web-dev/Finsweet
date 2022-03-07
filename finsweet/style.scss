@@ -931,12 +931,95 @@ p {
     font-size: 26px;
   }
 
+  .our-work-container-cards {
+    flex-direction: column;
+  }
+
+  .our-work-container-cards-left-overlay h4 {
+    font-size: 15px;
+  }
+  .our-work-container-cards-left-overlay p {
+    font-size: 10px;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+  }
+
   .features-container-header-section h2 {
     font-size: 18px;
   }
+  .faq-container {
+    flex-direction: column;
+  }
 
+  .contact-form-container {
+    height: auto;
+    flex-direction: column;
+  }
+  .our-blog-container-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .features-container-cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-contact-info-section {
+    flex-direction: column;
+  }
+  .footer-contact-info-section-right {
+    flex: 0.5;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  .footer-links-container {
+    flex-direction: column;
+  }
+  .footer-contact-info-section-left-info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  // add padding here
+  .home-hero {
+    padding: 50px 0;
+  }
+
+  .how-we-work-container {
+    padding: 50px 0;
+  }
+
+  .our-work-container {
+    padding: 50px 0;
+  }
+  .features-container {
+    padding: 50px 0;
+  }
+  .testimonial-container {
+    padding: 50px 20px 50px 0;
+  }
+  .faq-container {
+    padding: 50px 0;
+  }
+
+  .contact-form-container-start-convert {
+    flex: 0.5;
+    padding: 50px;
+  }
+  .contact-form-container-form {
+    padding: 50px 60px;
+  }
+
+  .our-blog-container {
+    padding: 50px 0;
+  }
+
+  .footer-contact-info {
+    padding-top: 50px;
+  }
+  .footer-links-container nav ul li a {
+    margin-right: 10px;
+  }
+  .footer-links-container {
+    padding: 15px 0;
   }
 }
 
@@ -945,11 +1028,21 @@ p {
     padding: 5px 10px;
     font-size: 12px;
   }
+  .testimonial-container {
+    flex-direction: column;
+  }
+  .contact-form-container {
+    height: auto;
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1300px) {
   .home-hero-button-container a {
     padding: 10px 15px;
     font-size: 15px;
+  }
+  .contact-form-container {
+    height: auto;
   }
 }
